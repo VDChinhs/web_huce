@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập | HUCE</title>
+    <link rel="icon" href="/public/img/LOGO_DHXD.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/public/css/login.css">
+
+</head>
+<body>
+    <img style="position:fixed;z-index:10;top:0;left:0" src="/public/img/topleft1.png" alt="no">
+    <img style="position:fixed;z-index:10;top:0;right:0" src="/public/img/topright1.png" alt="no">
+    <img style="position:fixed;z-index:10;bottom:0;left:0" src="/public/img/bottomleft1.png" alt="no">
+    <img style="position:fixed;z-index:10;bottom:0;right:0" src="/public/img/bottomright1.png" alt="no">
+    <!-- <div style="position:fixed;z-index:10;bottom:-50px;left:0;width:100%;height:104px;background:url(/public/img/ft.png) repeat-x bottom left;"></div>
+    <img style="position:fixed;z-index:10;bottom:20px;left:20px" src="/public/img/bottomleft.png" alt="no"> -->
+        <div class="container">
+            <div class="login">
+                <div class="login-header">
+                    <h1>HUCE</h1>
+                    <p>Đăng nhập để bắt đầu công việc của bạn</p>
+                </div>
+                <form action="#" name="myform" class="login-form" >
+                    <div class="login-form-content">
+                        <div class="form-item" id="input1" >
+                            <label for="account">Tài Khoản</label>
+                            <input name="tk" type="text" id="account" autocomplete="off" required>
+                        </div>
+                        <div class="form-item" id="input2">
+                            <label for="password">Mật Khẩu</label>
+                            <input name="mk" type="password" id="password">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="box" id="rememberMeCheckbox" checked>
+                            <label for="rememberMeCheckbox" class="checkboxLabel">Lưu Đăng Nhập</label>
+                        </div>
+                        <button type="submit" > Đăng Nhập</button>
+                    </div>
+                    <div class="login-footer">
+                        <a href="#">
+                            <img src="/public/img/google.png" alt="google" style="width: 40px;">SSO Google
+                        </a>
+                        <a href="#">
+                            <img src="/public/img/LOGO_DHXD.png" alt="offe" style="width: 25px;">SSO Eoffice
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            const input1 = document.getElementById('input1');
+            const input2 = document.querySelector('#input2');
+            input1.addEventListener('click',()=>{
+                if (input1.className == 'form-item') {
+                    input1.className += ' khung';
+                    input2.className = 'form-item';
+                }
+            });
+            input2.addEventListener('click',()=>{
+                if (input2.className == 'form-item') {
+                    input2.className += ' khung';
+                    input1.className = 'form-item';
+                }
+            });
+            function setCookie(cname, cvalue, exdays) {
+                const d = new Date();
+                d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                let expires = "expires="+ d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            $(document).ready(function () {
+                function validateForm() {
+                    let tk = document.getElementById('account').value;
+                    let mk = document.getElementById('password').value;
+                    if (tk == "" || tk == null || mk == "" || mk == null ) {
+                        alert("Vui Lòng Nhập Đầy Đủ !!!")
+                        return false;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+                function sign() {
+                    if (validateForm()) {
+                        let req = {
+                            tk: document.myform.tk.value,
+                            mk: document.myform.mk.value
+                        }
+                        $.ajax({
+                            type: "POST",
+                            url: "http://localhost:3000/dangnhap",
+                            contentType: "application/json; charset=utf-8",
+                            data: JSON.stringify(req),
+                            success: function (data) {
+                                if (data.mes =="OK") {
+                                    setCookie('token',data.token,1);
+                                    setCookie('ten',data.ten,1);
+
+                                    alert("Đăng Nhập Thành Công !!!!");
+                                    let homepage = "http://localhost:3000/trangchu";
+                                    window.location.href = homepage;
+                                }
+                                else{
+                                    alert("Đăng Nhập Thất Bại !!!!");
+                                }
+                            },
+                            error: function (msg) {
+                                console.log(msg);
+                                alert('Sai Tài Khoản Mật Khẩu');
+                            }
+                        });
+                    }
+                }
+                const myform = document.querySelector('.login-form').addEventListener('submit',(event) =>{
+                    event.preventDefault();
+                    sign();
+                });
+            });
+        </script>
+</body>
+</html>

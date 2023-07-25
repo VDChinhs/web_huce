@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào Tạo | HUCE</title>
+    <link rel="icon" href="/public/img/LOGO_DHXD.png">
+
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+
+    <link rel="stylesheet" href="/public/css/academic.css">
+
+</head>
+<body>
+    <a id= "top" href="#"><i class="bi bi-arrow-up"></i></a>
+    <nav>
+        <div class="container nav__container">
+            <div class="logo-name">
+                <a href="http://localhost:3000/trangchu"><img class="logo-trans" src="/public/img/logo_trans.png" alt="logo"></a>
+                <span></span>
+                <a href="http://localhost:3000/trangchu"> <h4>Đại Học Xây Dựng Hà Nội <br> Hanoi University of Civil Engineering</h4></a>
+            </div>
+            <span>
+    
+            </span>
+            <ul class="nav__menu">
+                <li><a href="http://localhost:3000/trangchu">Trang Chủ</a></li>
+                <li><a href="http://localhost:3000/gioithieu">Giới Thiệu</a></li>
+                <li><a href="#">Đào Tạo</a></li>
+                <li><a href="http://localhost:3000/lienhe" onclick="protect()">Liên Hệ</a></li>
+                <li><a href="#">
+                    <div class="user">
+                        <div class="bi bi-person-circle cus" id="nameuser"></div>
+                    </div>
+                </a>
+                </li>
+            </ul>
+            <button class="open-menu-btn" onclick="hidemenu()"><i class="bi bi-three-dots"></i></button>
+            <button class="close-menu-btn" onclick="hideclose()"><i class="bi bi-x"></i></button>
+        </div>
+    </nav>
+
+    
+    <section class="focus">
+        <h2>MỤC TIÊU VÀ ĐỊNH HƯỚNG ĐÀO TẠO</h2>
+        <div class="container focus__container">
+            <article class="item__focus">
+                <div class="heard__focus">
+                    <h4>1. Yêu cầu về kiến thức</h4>
+                    <div id="add">
+                        <ul>
+                            <li>
+                                Có kiến thức Lý luận Chính trị, Khoa học Xã hội và Nhân Văn, hiểu biết về Pháp luật Việt Nam, hiểu biết về An ninh Quốc phòng. Có kiến thức và khả năng tự rèn luyện về thể chất.
+                            </li>
+                            <li>
+                                Có kiến thức cơ bản về toán học, khoa học tự nhiên và cơ sở kỹ thuật phù hợp với ngành được đào tạo, đáp ứng việc tiếp thu các kiến thức chuyên ngành.
+                            </li>
+                            <li>
+                                Có kiến thức chuyên sâu trong các lĩnh vực thiết kế và thi công xây dựng bao gồm: Thiết kế kiến trúc; Kết cấu công trình; Thiết kế công nghệ và tổ chức thi công xây dựng công trình; Phân tích kinh tế; Quản lý, tổ chức, chỉ đạo thi công và quản lý khai thác các công trình xây dựng.
+                            </li>
+                            <li>
+                                Có đủ trình độ ngoại ngữ đáp ứng nhu cầu việc làm và học tập ở bậc sau đại học trong tất cả các ngành thuộc khối ngành xây dựng công trình.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="item__focus">
+                <div class="heard__focus">
+                    <h4>2. Yêu cầu về kỹ năng</h4>
+                    <div id="add">
+                        <ul>
+                            <li>Kỹ năng cứng:</li>
+                            <ul>
+
+                                <li>
+                                    Có kỹ năng độc lập và tự chủ trong việc giải quyết những vấn đề thuộc lĩnh vực chuyên môn.
+                                </li>
+                                <li>
+                                    Có khả năng phân tích, tổng hợp và vận dụng các kiến thức đã tích luỹ trong quá trình học vào thực hành nghề nghiệp thực tế.
+                                </li>
+                                <li>
+                                    Có kỹ năng sáng tạo trong xử lý các tình huống và kỹ năng giải quyết các vấn đề thuộc lĩnh vực xây dựng cơ bản theo yêu cầu, mục tiêu đặt ra.
+                                </li>
+                            </ul>
+                            <li>Kỹ năng mềm:</li>
+                            <ul>
+
+                                <li>
+                                    Có khả năng giao tiếp, thuyết trình, thảo luận, làm việc theo nhóm.
+                                </li>
+                                <li>
+                                    Có khả năng sử dụng ngoại ngữ, tin học trong nghiên cứu ứng dụng các lĩnh vực chuyên môn.
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="item__focus">
+                <div class="heard__focus">
+                    <h4>3. Yêu cầu về thái độ</h4>
+                    <div id="add">
+                        <ul>
+                            <li>
+                                Có phẩm chất, đạo đức cá nhân, ý thức nghề nghiệp; Làm tròn trách nhiệm của công dân.
+                            </li>
+                            <li>
+                                Có tác phong làm việc công nghiệp, hợp tác, thân thiện phục vụ cộng đồng.
+                            </li>
+                            <li>
+                                Có ý thức cập nhật kiến thức, sáng tạo trong công việc.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="item__focus">
+                <div class="heard__focus">
+                    <h4>4. Khả năng làm việc của người học sau khi tốt nghiệp</h4>
+                    <div id="add">
+                        <ul>
+                            <li>
+                                Là kỹ sư, kiến trúc sư làm tư vấn thiết kế, thi công các công trình xây dựng.Quản lý dự án đầu tư xây dựng công trình.
+                            </li>
+                            <li> 
+                                Cán bộ nghiên cứu khoa học và công nghệ các viện nghiên cứu.Cán bộ giảng dạy tại các cơ sở đào tạo.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="item__focus">
+                <div class="heard__focus">
+                    <h4>5. Khả năng học tập, nâng cao trình độ sau khi tốt nghiệp</h4>
+                    <div id="add">
+                        <ul>
+                            <li>
+                                Có kiến thức cơ bản, kiến thức chuyên ngành thích nghi với thị trường lao động luôn biến động.
+                            </li>
+                            <li>
+                                Có kiến thức liên ngành để vừa thuận lợi khi cần vươn lên trình độ học vấn cao hơn, vừa có khả năng chuyển đổi nghề nghiệp dễ dàng.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="academics">
+        <h2>CÁC NGÀNH, CHUYÊN NGÀNH ĐÀO TẠO TRÌNH ĐỘ ĐẠI HỌC </h2>
+        <div class="container academics__container">
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/ITjpg.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Công Nghệ Thông Tin</h4>
+                    <p>
+                        Ngành Công nghệ thông tin là một trong những ngành được lựa chọn hàng đầu hiện nay trong các trường Đại học kỹ thuật do sự bùng nổ về ứng dụng Công nghệ thông tin trong đời sống và nhu cầu tuyển dụng nhân sự của các doanh nghiệp trong và ngoài nước.
+                    </p><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-cong-nghe-thong-tin" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/CS.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Khoa Học Máy Tính</h4>
+                    <p> 
+                        Khoa học Máy tính là một trong những ngành học quan trọng tại các trường đại học có đào tạo về công nghệ thông tin nói riêng và kỹ thuật nói chung. Đây là ngành học dành cho những bạn trẻ đam mê nghiên cứu chuyên sâu về công nghệ thông tin, đáp ứng các yêu cầu về ứng dụng công nghệ thông tin trong cách mạng công nghiệp 4.0.                              
+                    </p>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-khoa-hoc-may-tinh" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/quyhoachjpg.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Quy Hoạch Kiến Trúc</h4>
+                    <p>
+                        Chuyên ngành Quy hoạch - Kiến trúc đào tạo các kiến trúc sư quy hoạch làm việc trong lĩnh vực quy hoạch đô thị, nông thôn và lĩnh vực kiến trúc. Có trình độ chuyên môn để lập các đồ án Quy hoạch đô thị, quy hoạch nông thôn, quy hoạch các khu vực đặc thù.
+                    </p><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-quy-hoach-vung-va-do-thi-chuyen-nganh-quy-hoach-kien-truc" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/kythuatcodien.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Kỹ Thuật Cơ Điện</h4>
+                    <p>
+                        Chuyên ngành Kỹ Thật Cơ Điện đào tạo các kỹ sư tư vấn thiết kế, tư vấn giám sát, thi công, quản lý vận hành các hệ thống cơ điện,  hệ thống tự động hóa trong các nhà máy, khu công nghiệp, khu chế xuất, các khu dân cư, các tòa nhà, cao ốc văn phòng.
+                    </p><br><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-ky-thuat-co-khi-chuyen-nganh-ky-thuat-co-dien" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/xaydungdandung.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Xây Dựng Dân Dụng Và Công Nghiệp</h4>
+                    <p>
+                        Chuyên ngành Xây dựng Dân dụng và Công nghiệp thuộc Khoa Xây dựng Dân dụng và Công nghiệp đào tạo chuyên sâu về các lĩnh vực như thiết kế dân dụng và kết cấu, quản lý và giám sát thi công, kiểm định chất lượng các công trình xây dựng dân dụng và công trình công nghiệp phục vụ đời sống con người như: nhà ở, nhà xưởng, rạp hát, nhà thi đấu, sân vận động, nhà ga, tháp truyền hình, cột truyền tải điện.
+                    </p>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-ky-thuat-xay-dung-chuyen-nganh-xay-dung-dan-dung-va-cong-nghiep" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/cauduong.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Xây Dựng Cầu Đường</h4>
+                    <p>
+                        Chuyên ngành Quy hoạch - Kiến trúc đào tạo các kiến trúc sư quy hoạch làm việc trong lĩnh vực quy hoạch đô thị, nông thôn và lĩnh vực kiến trúc. Có trình độ chuyên môn để lập các đồ án Quy hoạch đô thị, quy hoạch nông thôn, quy hoạch các khu vực đặc thù.
+                    </p><br><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-ky-thuat-xay-dung-cong-trinh-giao-thong-chuyen-nganh-xay-dung-cau-duong" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/kinhtexaydung.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Kinh Tế Xây Dựng</h4>
+                    <p>
+                        Kinh tế xây dựng là ngành kết hợp giữa lĩnh vực kinh tế và quản lý xây dựng với những công việc cụ thể như tài chính, kế toán, thống kê; công tác lập và thẩm định dự án đầu tư các công trình xây dựng; lập, thẩm tra và thẩm định dự toán, thanh quyết toán xây dựng công trình; định giá và quản lý chi phí.
+                    </p><br><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-kinh-te-xay-dung" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/kientrucjpg.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Kiến Trúc</h4>
+                    <p>
+                        Kiến trúc sư được đào tạo có thể làm chủ các nguyên tắc, khái niệm, phương pháp trong kiến trúc, hiểu các vấn đề liên quan đến thực hành chuyên môn và đặc biệt, có khả năng hội nhập quốc tế cao trong việc phát triển trình độ, năng lực hành nghề chuyên môn, có trách nhiệm, cung cấp các giải pháp sáng tạo và liên quan đến các vấn đề kiến trúc phức tạp, phát triển kỹ năng trong suốt cuộc đời nghề nghiệp và đáp ứng những nhu cầu thay đổi của xã hội.
+                    </p>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-kien-truc" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/logistics.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Logistics Và Quản Lý Chuỗi Cung Ứng</h4>
+                    <p>
+                        Logistics là chuỗi các hoạt động trung gian bao gồm lên kế hoạch, áp dụng và kiểm soát các luồng chuyển dịch của hàng hóa, kiểm soát nguồn nguyên nhiên liệu vật tư đầu vào và sản phẩm cuối cùng đầu ra, từ điểm xuất phát tới điểm tiêu thụ. Hoạt động của Logistics bao gồm vận tải hàng hóa xuất và nhập, quản lý đội tàu, kho bãi, nguyên vật liệu, thực hiện đơn hàng, quản trị tồn kho, hoạch định cung/cầu. 
+                    </p>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-logistics-va-quan-ly-chuoi-cung-ung" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/kythuatmoitruong.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Kỹ Thuật Môi Trường</h4>
+                    <p>
+                        Khoa Kỹ thuật Môi trường, Trường Đại học Xây dựng là đơn vị đầu tiên trong hệ thống các cơ sở giáo dục ở Việt Nam đào tạo kỹ sư trong các lĩnh vực cơ sở hạ tầng và kỹ thuật môi trường từ năm 1966.
+                    </p><br><br><br><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-ky-thuat-moi-truong" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/kythuatnuoc.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Kỹ Thuật Nước - Môi Trường Nước</h4>
+                    <p>
+                        Trong những năm qua, sự gia tăng dân số đô thị nhanh chóng đi đôi với quá trình hiện đại hóa, công nghiệp hóa mạnh mẽ. Phát triển hệ thống kỹ thuật hạ tầng, trong đó có hệ thống cấp nước, thoát nước, bảo vệ môi trường luôn là những dự án ưu tiên, thu hút đầu tư của Nhà nước, tư nhân và nước ngoài. Gắn liền với đó, nhu cầu nhân lực về kỹ thuật hạ tầng và môi trường ngày càng lớn, đặc biệt là chuyên ngành Kỹ thuật Nước - Môi trường Nước (KTN-MTN).
+                    </p>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-ky-thuat-cap-thoat-nuoc-chuyen-nganh-ky-thuat-nuoc-moi-truong-nuoc" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+            <article class="academic" >
+                <a href="#" class="academic__image">
+                    <img src="/public/img/vatlieuxaydung.jpg" alt="khong thien thi">
+                </a>
+                <div class="academic__info">
+                    <h4>Công Nghệ Kỹ Thuật Vật Liệu Xây Dựng</h4>
+                    <p>
+                        Ngành Công nghệ Kỹ thuật Vật liệu xây dựng (VLXD) đào tạo chuyên sâu về công nghệ sản xuất, ứng dụng và kiểm soát chất lượng các loại vật liệu xây dựng; nghiên cứu phát triển các vật liệu mới, vật liệu có tính năng cao nhằm đáp ứng nhu cầu ngày càng cao và đa dạng trong kiến trúc và xây dựng, hướng tới phát triển bền vững.
+                    </p><br><br>
+                    <a target="_blank" href="https://tuyensinh.huce.edu.vn/nganh-cong-nghe-ky-thuat-vat-lieu-xay-dung" class="btn btn-primary">Đọc Thêm</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="main.html" class="footer__logo"><h4>Đại Học Xây Dựng Hà Nội</h4></a>
+                <p>Địa chỉ: Số 55 đường Giải Phóng, Hai Bà Trưng, Hà Nội</p>
+                <p>Điện thoại: (024) 38 696 397</p>
+                <p>Email: dhxaydung@huce.edu.vn</p>
+                <p>Fax: 024.38.691.684</p>
+                <div class="footer__socials">
+                    <div>
+                        <p>Mạng xã hội</p>
+                    </div>
+                    <a href="https://www.facebook.com/truongdhxaydung"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCzsYk_GlL5IYG6wVUkyO_pQ/videos"><i class="bi bi-youtube"></i></a>
+                </div>       
+            </div>
+            <div class="footer__2">
+                <h4>Thông tin chung</h4>
+                <a href="#"><p>Lịch sử phát triển </p></a>
+                <a href="#"><p>Cơ cấu tổ chức </p></a>
+                <a href="#"><p>Khoa, phòng, ban </p></a>
+                <a href="#"><p>Viện nghiên cứu </p></a>
+                <a href="#"><p>Hệ thống nhận diện </p></a>
+                <a href="#"><p>Ba công khai</p></a>
+            </div>
+            <div class="footer__3">
+                <h4>Đào tạo</h4>
+                <a href="#"><p>Đại học hệ chính quy</p></a>
+                <a href="#"><p>Thông tin tuyển sinh</p></a>
+                <a href="#"><p>Đào tạo sau đại học</p></a>
+                <a href="#"><p>Liên kết đào tọa quốc tế</p></a>
+                <a href="#"><p>Cổng thông tin sinh viên</p></a>
+                <a href="#"><p>Cổng thông tin đào tạo</p></a>
+                <a href="#"><p>Thư viện</p></a>
+            </div>
+            <div class="footer__4">
+                <h4>Liên kết nhanh</h4>
+                <a href="#"><p>Tạp chí Khoa học Công nghệ</p></a>
+                <a href="#"><p>Cổng thông tin cán bộ viên chức</p></a>
+                <a href="#"><p>Phòng tài vụ</p></a>
+                <a href="#"><p>Khoa Xây dựng dân dụng và Công nghiệp</p></a>
+                <a href="#"><p>Khoa Công nghệ thông tin</p></a>
+                <a href="#"><p>Khoa Kinh tế và Quản lý xây dựng</p></a>
+                <a href="#"><p>Khoa Kỹ thuật môi trường</p></a>
+                <a href="#"><p>Trung tâm CNTT & CSDL</p></a>
+                <a href="#"><p>Sơ đồ trang</p></a>
+                <a href="#"><p>Xây dựng số</p></a>
+            </div>     
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; VD.CHINHS</small>
+        </div>
+    </footer>
+
+    <script src="/public/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ origin:'top',distance:'60px',duration: 1000 });
+        ScrollReveal().reveal('.academic',{interval: 100})
+
+    </script>
+</body>
+</html>

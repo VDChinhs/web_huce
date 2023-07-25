@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu | HUCE</title>
+    <link rel="icon" href="/public/img/LOGO_DHXD.png">
+
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="/public/css/about.css">
+
+</head>
+<body>
+    <a id= "top" href="#"><i class="bi bi-arrow-up"></i></a>
+    <nav>
+        <div class="container nav__container">
+            <div class="logo-name">
+                <a href="http://localhost:3000/trangchu"><img class="logo-trans" src="/public/img/logo_trans.png" alt="logo"></a>
+                <span></span>
+                <a href="http://localhost:3000/trangchu"> <h4>Đại Học Xây Dựng Hà Nội <br> Hanoi University of Civil Engineering</h4></a>
+            </div>
+            <span>
+    
+            </span>
+            <ul class="nav__menu">
+                <li><a href="http://localhost:3000/trangchu">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="http://localhost:3000/daotao">Đào Tạo</a></li>
+                <li><a href="http://localhost:3000/lienhe" onclick="protect()">Liên Hệ</a></li>
+                <li><a href="#">
+                    <div class="user">
+                        <div class="bi bi-person-circle cus" id="nameuser"></div>
+                    </div>
+                </a>
+                </li>
+            </ul>
+            <button class="open-menu-btn" onclick="hidemenu()"><i class="bi bi-three-dots"></i></button>
+            <button class="close-menu-btn" onclick="hideclose()"><i class="bi bi-x"></i></button>
+        </div>
+    </nav>
+
+
+    <section class="about">
+        <div class="container about__container" style="grid-template-columns: 40% 60%">
+            <div class="about-img">
+                <img src="/public/img/hieutruongjpg.jpg" alt="donothing">
+                <em>PGS.TS.NGƯT Phạm Duy Hòa - Bí thư Đảng ủy, Hiệu trưởng Trường Đại học Xây dựng Hà Nội</em>
+            </div>
+            <div class="about-content">   
+                <h1>Lời Nói Đầu Tiên</h1>
+                <p>Trải qua hơn 55 năm hình thành và phát triển, với kinh nghiệm hơn 65 năm đào tạo, Trường Đại học Xây dựng Hà Nội đã trở thành một trung tâm hàng đầu về đào tạo, nghiên cứu khoa học, chuyển giao công nghệ và cung cấp nguồn nhân lực chất lượng cao cho đất nước trong lĩnh vực xây dựng.</p>
+                <div class="about__cards">
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                        </span>
+                        <h3>80.000</h3>
+                        <p>Kỹ Sư</p>
+                    </article>
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>7.917</h3>
+                        <p>Thạc Sĩ</p>
+                    </article>
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>247</h3>
+                        <p>Tiến Sĩ</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="container about__container" style="grid-template-columns: 60% 40%">
+            <div class="about-content">   
+                <h1>Cơ Sở Vật Chất</h1>
+                <p>Tại Hà Nội có các khu giảng đường là nhà H1 (6 tầng ), nhà H2 (4 tầng), nhà H3 (7 tầng + 2 tầng hầm), nhà Thư viện (4 tầng) và nhà Thí nghiệm (10 tầng), Trung tâm thể thao 1403m2, Hội trường G3 (900 chỗ); Khu làm việc nhà A1 (6 tầng), nhà A2 (2 tầng) và Ký túc xá sinh viên 7464m2/1500 giường. Hiện nay, trường đang đầu tư xây dựng cơ sở Đào tạo thực nghiệm tại Khu Đô thị ĐH Nam Cao - thành phố Phủ Lý - tỉnh Hà Nam với diện tích trên 24ha.</p>
+                <div class="about__cards">
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i><i class="fa-solid fa-user"></i></i>
+                            </div>
+                        </span>
+                        <h3>3.9</h3>
+                        <p>ha</p>
+                    </article>
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>90+</h3>
+                        <p>Phòng Học</p>
+                    </article>
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>16</h3>
+                        <p>Phòng Thí Nghiệm</p>
+                    </article>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="/public/img/cosohanam.jpg " alt="donothing">
+                <em>Trường Đại học Xây dựng Hà Nội - Cơ sở đào tạo thực nghiệm tại Hà Nam</em>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="container about__container" style="grid-template-columns: 40% 60%">
+            <div class="about-img anh1">
+                <img src="/public/img/thanhtuu.png" alt="donothing">
+                <em>Huân Chương</em>
+            </div>
+            <div class="about-content">   
+                <h1>Thành Tựu</h1>
+                <p>Trải qua hơn 50 năm xây dựng và phát triển, mỗi bước đi của Trường Đại học Xây dựng Hà Nội đều gắn liền với sự phát triển của ngành, của Thủ đô Hà Nội và của đất nước. Ra đời trong hoàn cảnh ác liệt của cuộc kháng chiến chống Mỹ cứu nước, các thế hệ thầy và trò đã không hề bị khuất phục, luôn đứng vững và không ngừng phấn đấu vươn lên cho đến ngày nay, xây dựng Trường Đại học Xây dựng Hà Nội trở thành một trung tâm đào tạo, NCKH & chuyển giao công nghệ lớn, uy tín của đất nước, xứng đáng với nhiều phần thưởng cao quý mà Đảng, Nhà nước, Chính phủ trao tặng.</p>
+                <div class="about__cards">
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <!-- <i><img src="/public/icon/medal.png" alt="o"></i> -->
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>54</h3>
+                        <p>Huân chương Lao động</p>
+                    </article>
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>500</h3>
+                        <p>Huân, Huy chương Kháng chiến chống Mỹ</p>
+                    </article>
+                    <article class="about__card">
+                        <span>
+                            <div class="about__icon">
+                                <i></i>
+                            </div>
+                        </span>
+                        <h3>600</h3>
+                        <p> Huy chương “Vì sự nghiệp giáo dục”</p>
+                    </article>
+                </div>
+            </div>
+            <div class="about-img anh2">
+                <img src="/public/img/thanhtuu.png" alt="donothing">
+                <em>Huân Chương</em>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="main.html" class="footer__logo"><h4>Đại Học Xây Dựng Hà Nội</h4></a>
+                <p>Địa chỉ: Số 55 đường Giải Phóng, Hai Bà Trưng, Hà Nội</p>
+                <p>Điện thoại: (024) 38 696 397</p>
+                <p>Email: dhxaydung@huce.edu.vn</p>
+                <p>Fax: 024.38.691.684</p>
+                <div class="footer__socials">
+                    <div>
+                        <p>Mạng xã hội</p>
+                    </div>
+                    <!-- <p>Ứng dụng mobile</p> -->
+                    <a href="https://www.facebook.com/truongdhxaydung"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCzsYk_GlL5IYG6wVUkyO_pQ/videos"><i class="bi bi-youtube"></i></a>
+                </div>       
+            </div>
+            <div class="footer__2">
+                <h4>Thông tin chung</h4>
+                <a href="#"><p>Lịch sử phát triển </p></a>
+                <a href="#"><p>Cơ cấu tổ chức </p></a>
+                <a href="#"><p>Khoa, phòng, ban </p></a>
+                <a href="#"><p>Viện nghiên cứu </p></a>
+                <a href="#"><p>Hệ thống nhận diện </p></a>
+                <a href="#"><p>Ba công khai</p></a>
+            </div>
+            <div class="footer__3">
+                <h4>Đào tạo</h4>
+                <a href="#"><p>Đại học hệ chính quy</p></a>
+                <a href="#"><p>Thông tin tuyển sinh</p></a>
+                <a href="#"><p>Đào tạo sau đại học</p></a>
+                <a href="#"><p>Liên kết đào tọa quốc tế</p></a>
+                <a href="#"><p>Cổng thông tin sinh viên</p></a>
+                <a href="#"><p>Cổng thông tin đào tạo</p></a>
+                <a href="#"><p>Thư viện</p></a>
+            </div>
+            <div class="footer__4">
+                <h4>Liên kết nhanh</h4>
+                <a href="#"><p>Tạp chí Khoa học Công nghệ</p></a>
+                <a href="#"><p>Cổng thông tin cán bộ viên chức</p></a>
+                <a href="#"><p>Phòng tài vụ</p></a>
+                <a href="#"><p>Khoa Xây dựng dân dụng và Công nghiệp</p></a>
+                <a href="#"><p>Khoa Công nghệ thông tin</p></a>
+                <a href="#"><p>Khoa Kinh tế và Quản lý xây dựng</p></a>
+                <a href="#"><p>Khoa Kỹ thuật môi trường</p></a>
+                <a href="#"><p>Trung tâm CNTT & CSDL</p></a>
+                <a href="#"><p>Sơ đồ trang</p></a>
+                <a href="#"><p>Xây dựng số</p></a>
+            </div>          
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; VD.CHINHS</small>
+        </div>
+    </footer>
+
+    <script src="/public/js/main.js"></script>
+</body>
+</html>
