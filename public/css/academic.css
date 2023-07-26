@@ -1,0 +1,65 @@
+:root{
+    --color-blue: rgb(116, 116, 239);
+    --color-white: white;
+    --color-navfooter:#212529;
+    --color-bg1:#001c44;
+    --color-bg2:#0c5776;
+    --color-bg3:#2d99ae;
+    --color-button:rgb(194, 61, 61);
+    --color-gradian:linear-gradient(var(--color-bg1),var(--color-bg3));
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+nav{
+    background: var(--color-navfooter);
+}
+nav a{
+    color: var(--color-white);
+}
+.academics{
+    margin-top: 3rem;
+}
+
+
+.focus{
+    margin-top: 5rem;
+    background-color: var(--color-bg2);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
+
+} 
+.item__focus{
+    border-radius: 20px;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    background-color: var(--color-bg3);
+    cursor: pointer;
+    transition: var(--transition);
+    /* align-items: center; */
+    /* gap: 1.4rem; */
+    /* height: fit-content; */
+}
+#add{
+    transition: var(--transition);
+}
+.heard__focus{
+    transition: var(--transition);
+}
+.item__focus:hover{
+    box-shadow: 0 3rem 3rem rgb(0, 0, 0, 0.4);
+    z-index: 1;  
+}
+.item__focus #add{
+    display: none;
+}
+.item__focus.open #add{
+    display: inline-block;
+}
+/* .item__focus ul.list{
+    list-style: circle;
+    list-style-position: inside;
+} */
