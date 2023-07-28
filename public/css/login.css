@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+
+:root{
+    --color-blue: rgb(116, 116, 239);
+    --color-white: white;
+    --color-navfooter:#212529;
+    --color-bg1:#001c44;
+    --color-bg2:#0c5776;
+    --color-bg3:#2d99ae;
+    --color-button:rgb(194, 61, 61);
+    --color-gradian:linear-gradient(var(--color-bg1),var(--color-bg3)); 
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    background-image: var(--color-gradian);
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-bg3);
+    display: grid;
+    width: 500px;
+    height: 600px;
+    border-radius: 50px;
+    
+}
+.login{
+    margin: auto;
+}
+.login-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login-footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+.login-header h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.login-header p{
+    opacity: 0.7;
+}
+.login-footer a{
+    float: 6;
+    gap: 1rem;
+    border: 1px solid var(--color-bg2);
+    border-radius: 100px;
+    padding: 0.8rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: var(--color-bg2);
+    color: white;
+    transition: var(--transition);
+}
+.login-footer a:hover{
+    background: var(--color-bg3);
+    border: 1px solid var(--color-white);
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+button{
+    border: none;
+    background: var(--color-bg2);
+    border: 1px solid var(--color-bg2);
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+button:hover{
+    background: var(--color-bg3);
+    border: 1px solid var(--color-white);
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    height: 55px;
+    padding: 0 2rem;
+    /* width: 100%; */
+    outline: none;
+    /* transition: ; */
+    font-size: 1.6rem;
+    border-radius: 100px;
+    background: var(--color-bg3);
+}
+.khung {
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.form-item input{
+    width: 100%;
+}
+
+.form-item label:not(.checkboxLabel){
+    display: inline-block;
+    background-color: white;
+    margin-top: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -18px);
+    font-size: 0.9rem;
+    background: var(--color-bg3);
+}
+@media screen and (max-width: 960px) {
+
+    .login-footer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
